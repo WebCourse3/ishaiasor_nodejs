@@ -38,7 +38,7 @@ function filterCommends(userName,msg) {
 	messageBudy;
 
 	for(var i= 0 ;i<letters.length;i++){
-		if(letters[i].charAt(0)=='/')
+		if(letters[i].charAt(0)==='/')
 		{
 			if(letters[i].includes('color'))
 			{
