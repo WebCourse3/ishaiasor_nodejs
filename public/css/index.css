@@ -1,0 +1,143 @@
+
+/*change for sakak*/
+body
+{
+	margin: 0;
+	padding: 0;
+	min-width: 500px;
+}
+
+nav{
+	background-color:  deepskyblue;
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 1%;
+	min-width: 300px;
+	border-radius: 4px;
+	text-align: center;
+}
+
+nav img{
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+	float: left;
+	margin: 5px;
+}
+
+.header-text{
+	color: white;
+	height: 60px;
+	width: 20%;
+	display:inline-block;
+	line-height: 60px;
+	min-width: 160px;
+	text-align: center;
+	float: left;
+	font-size: 26px;
+	letter-spacing: 2px;
+	font-weight: 800;
+}
+
+#userNameText{
+	border: 1px solid deepskyblue;
+	color: deepskyblue;
+	height: 36px;
+	width: 20%;
+	margin: 1px 30px 0 30px ;
+	border-radius: 4px;
+	font-size: 20px;
+	outline-style: none;
+	min-width: 140px;
+	display: inline-block;
+	float: left;
+}
+
+#connctedUsers{
+	color: deepskyblue;
+	height: 36px;
+	width: 20%;
+	margin: 10px 30px 10px 30px ;
+	border-radius: 4px;
+	font-size: 20px;
+	outline-style: none;
+	min-width: 160px;
+	display: inline-block;
+	float: right;
+}
+
+#sendButton{
+	border: 0;
+	outline-style: none;
+   color: deepskyblue;
+	background-color: white;
+	cursor: pointer;
+	height: 40px;
+	width: 8%;
+	margin: 10px 1% 10px 1%;
+	border-radius: 4px;
+	font-size: 20px;
+	min-width: 80px;
+	display: inline-block;
+}
+
+#sendButton:hover{
+	box-shadow: 0 0 5px white;
+	text-shadow: 0px 0px 1px deepskyblue;
+}
+
+#messageText{
+	border: 1px solid deepskyblue;
+	color: deepskyblue;
+	height: 36px;
+	width: 80%;
+	margin: 10px 1% 10px 1%;
+	border-radius: 4px;
+	font-size: 20px;
+	outline-style: none;
+	min-width: 200px;
+	display: inline-block;
+}
+
+#messages {
+	display: block;
+	float: left;
+    width: 98%;
+	margin: 1%;
+	border-radius: 4px;
+	border: 1px solid deepskyblue;
+	height: calc(100vh - 260px);
+}
+
+.message-user-name{
+	width: 20%;
+	min-width: 100px;
+	font-size: 18px;
+	line-height: 26px;
+	color: gray;
+	border: 1px solid lightgray;
+}
+
+.message{
+    width: 98%;
+	min-height: 30px;
+	border-radius: 4px;
+	border: 1px solid lightgray;
+	font-size: 18px;
+	border-collapse: collapse;
+	line-height: 26px;
+	color: gray;
+	margin: 1%;
+}
+
+footer{
+	background-color:  deepskyblue;
+	display:inline-block;
+	width: 98%;
+	min-width: 300px;
+	border-radius: 4px;
+	text-align: center;
+	margin: 0 1% 20px 1%;
+	padding: 0;
+	border: none;
+}
