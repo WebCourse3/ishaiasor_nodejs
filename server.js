@@ -37,13 +37,12 @@ function filterCommends(userName,msg) {
 	var messageBudy = '<div class="message" style = "';
 	messageBudy;
 
-
+/*
 	while (letters.length!= 0 && letters.indexOf('/')){
 		console.log(letters.indexOf('/'));
 		break;
-	}
+	*/
 
-/*
 	for(var i= 0 ;i<letters.length;i++){
 		if(letters[i].charAt(0)==='/')
 		{
@@ -72,9 +71,11 @@ function filterCommends(userName,msg) {
 				i--;
 			}
 
-		}
+			if(i<0)
+				i=0;
 
-	}*/
+		}
+	}
 	messageBudy+= '">';
 	messageBudy+= "<span style='color: gray'>"+userName+" : </span>";
 	letters.forEach(function (t) { messageBudy+= t+' ' });
