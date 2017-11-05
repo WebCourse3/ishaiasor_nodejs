@@ -1,0 +1,41 @@
+<!-- change for sakak -->
+<!doctype html>
+<html>
+<head>
+	<title>ofek twitter</title>
+	<link rel="stylesheet" type="text/css" href="../css/index.css" />
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+</head>
+<body>
+<nav >
+	<img src="../images/ofek.png">
+	<div class="header-text">ofek twitter</div>
+</nav>
+
+<input type="text" id="userNameText" placeholder=" user name">
+<div id="connctedUsers"></div>
+<div id="messages"></div>
+<footer>
+	<input id="messageText" placeholder=" enter message text " autocomplete="off"  />
+	<button id="sendButton" >Send</button>
+</footer>
+
+</body>
+<script>
+	$(function () {
+		var socket = io();
+		$('#sendButton').click(function(){
+			socket.emit('chat message',$('#userNameText').val(),$('#messageText').val());
+			$('#messageText').val('');
+			return false;
+		});
+		socket.on('chat message', function(msg){
+			$('#messages').append(msg);
+		});
+		socket.on('connected users', function(number){
+			$('#connctedUsers').text('connected users : '+number);
+		});
+	});
+</script>
+</html>
